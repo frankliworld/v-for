@@ -1,0 +1,44 @@
+:root {
+    --body-bg: #0B0B0B;
+    @media screen and (min-width: 540px) {
+        --body-bg: #0B0B0B;
+    }
+    @media screen and (min-width: 720px) {
+        --body-bg: #282828;
+    }
+    @media screen and (min-width: 960px) {
+        --body-bg: #333333;
+    }
+    @media screen and (min-width: 1140px) {
+        --body-bg: #414141;
+    }
+}
+
+body {
+    background: var(--body-bg);
+}
+
+.content {
+    display: inline-block;
+}
+input {
+    /*display: flex;*/
+    /*align-content: center;*/
+    /*justify-content: center;*/
+    background: none;
+    color: #cccccc;
+    padding: 5px 30px;
+    border-radius: 20px;
+    margin: 12px;
+    border: 1px solid #848484;
+}
+input:hover {
+    transition: ease-in 0.2s;
+    color: #ffffff;
+    border: 1px solid #ffffff;
+    transform: scale(.95);
+
+}
+input:focus {
+    outline-style: none;
+}
